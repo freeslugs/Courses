@@ -118,6 +118,7 @@ Template.scheduleSidebarSection.formatSectionTimes = function() {
 };
 
 Template.scheduleSidebarSection.formatLocation = function() {
+  console.log(this.section);
   if (!this.section.building[0]) {
     return "Location TBA";
   }
